@@ -1,1 +1,7 @@
-{{outlet}}
+{{#each model as |post|}}
+  {{post-tile post=post}}
+{{/each}}
+
+
+{{#link-to 'about'}}<button class="btn btn-sm btn-success">About</button>{{/link-to}}
+{{#link-to 'about'}}<button class="btn btn-sm btn-warning">Contact</button>{{/link-to}}

@@ -6,5 +6,4 @@ export default DS.Model.extend({
   body: DS.attr(),
   link: DS.attr(),
   screenshot: DS.attr(),
-  category: DS.belongsTo('category', {async: true}),
 });
