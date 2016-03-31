@@ -27,13 +27,12 @@
 
       <div class="form-group">
         <label for="category">Category</label>
-        <select name="category">
+        {{#x-select value=category}}
         {{#each categories as |category|}}
-          <option value={{category}}>{{category.name}} {{category.id}}</option>
+          {{#x-option value=category}}{{category.name}}{{/x-option}}
         {{/each}}
-        </select>
+        {{/x-select}}
       </div>
-
     <button {{action 'savePost'}}>Save</button>
   </form>
 </div>
