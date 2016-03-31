@@ -1,0 +1,14 @@
+#page-title {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 62px;
+  text-align: center;
+  padding: 10px;
+}
+
+.postImage {
+  border: solid black 2px;
+}
+
+.btn {
+  margin: 4px;
+}

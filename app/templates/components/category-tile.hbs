@@ -1,5 +1,6 @@
-<ul>
-  {{#each category.posts as |post|}}
-    <li>Title {{post.title}}</li>
-  {{/each}}
-</ul>
+{{#each category.posts as |post|}}
+  {{#link-to 'post' post.id}}
+    <h3>{{post.title}}</h3>
+  {{/link-to}}
+<p>Posted: {{post.date}}</p>
+{{/each}}
