@@ -1,10 +1,7 @@
-{{#each model as |post|}}
+{{category-links categories=model.categories}}
+
+{{#each model.posts as |post|}}
   {{post-tile post=post}}
 {{/each}}
-
-
-<h1>MAKE COMPONENT FOR add-post THAT IS CHILD OF new-post ROUTE TO SAVE DATA</h1>
-<h1>https://guides.emberjs.com/v2.0.0/controllers/  </h1>
-<h1>(WE PROBABLY SHOULDN'T DO THIS BUT WE PROBABLY WILL)</h1>
 
 {{link-to 'New Post' 'new'}}

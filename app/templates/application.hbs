@@ -11,6 +11,7 @@
         {{#bs-dropdown-menu}}
         <li>{{link-to 'About' 'about' }}</li>
         <li>{{link-to 'Contact Us' 'contact' }}</li>
+        <li>{{link-to 'New Post' 'new'}}</li>
         {{/bs-dropdown-menu}}
         {{/bs-dropdown}}
 
@@ -19,21 +20,15 @@
 
     <div class="collapse navbar-collapse" id="menu-collapse">
       <ul class="nav navbar-nav">
-        {{#bs-dropdown tagName="li"}}
-        {{#bs-dropdown-toggle}}Categories <span class='caret'></span>{{/bs-dropdown-toggle}}
-        {{#bs-dropdown-menu}}
-        <li>1</li>
-        <li>2</li>
-        {{/bs-dropdown-menu}}
-        {{/bs-dropdown}}
         <li>{{link-to 'About' 'about' }}</li>
         <li>{{link-to 'Contact Us' 'contact' }}</li>
+        <li>{{link-to 'New Post' 'new'}}</li>
       </ul>
     </div>
   </div>
 </nav>
-<h2 id="title">Welcome to Craig's House</h2>
 
 <div class="container">
+  <h2 id="title">Welcome to Craig's House</h2>
   {{outlet}}
 </div>

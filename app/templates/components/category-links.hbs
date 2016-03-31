@@ -1,0 +1,6 @@
+<button class="btn btn-default" {{action 'categoryLinksToggle'}}>Browse Posts by Category</button>
+{{#if categoryLinksDisplay}}
+  {{#each categories as |category|}}
+    {{link-to category.name 'category' category.id}}
+  {{/each}}
+{{/if}}

@@ -9,7 +9,9 @@ export default Ember.Component.extend({
       body: this.get('body') ? this.get('body') : "",
       link: this.get('link') ? this.get('link') : "",
       screenshot: this.get('screenshot') ? this.get('screenshot') : "",
+      category: this.get('category')
     };
+    console.log(params.category);
     this.sendAction('savePost', params);
   }
 }
